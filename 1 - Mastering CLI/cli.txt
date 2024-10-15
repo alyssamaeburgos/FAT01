@@ -26,3 +26,4 @@ rm [filename.extension]
 
 - Clear the terminal 
 clear
+////

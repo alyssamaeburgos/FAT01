@@ -1,0 +1,45 @@
+/* static */
+/* elements follow the normal document by default */
+
+/* relative */
+/* relative to its original position */
+#relative {
+  background-color: #fc0;
+  position: relative;
+  /* top right bottom left */
+  top: 80px; /* space from its original position */
+  left: 10px;
+}
+
+/* absolute */
+/* absolute positioning value depends from the position of the parent container */
+/* relative parent container (which is value are assigned in the internal style} that have a position that is not relative */
+/* remove in the normal document */
+#absolute {
+  background-color: #f00;
+  color: #fff;
+  position: absolute;
+  /* top right bottom left */
+  top: 0px;
+  right: 0px;
+}
+
+/* fixed */
+/* relative to the viewport */
+/* remove in the normal document */
+/* stays on the same place even if you scroll up and down the page */
+/* used in floating windows */
+#fixed {
+  background-color: #0cf;
+  position: fixed;
+}
+
+/* sticky */
+/* when assigned, it starts relative */
+.sticky {
+  background-color: #3c3;
+  position: sticky;
+  /* top right bottom left */
+  /* when the content reach the assigned value, it will stick on it. */
+  top: 0px;
+}

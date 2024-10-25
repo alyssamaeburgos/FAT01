@@ -1,0 +1,74 @@
+/* Flexbox */
+/* Allows us to stretch or compress the elements */
+/* make it bigger or smaller */
+/* one-dimensional layout */
+/* x-axis is called main axis */
+/* y-axis is called cross axis */
+
+.flexContainer {
+  /* when you apply flex to display property, it makes the flex-direction into row value by default */
+
+  display: flex;
+  flex-direction: column;
+  flex-direction: row; /* default */
+
+  /* main axis */
+  justify-content: flex-end; /* make the elements put in the right side of the monitor */
+  justify-content: flex-start; /* make the elements put on the start again (x-axis -> left) */
+  justify-content: center; /* make the elements put in the center of the monitor */
+  justify-content: space-between; /* put space in between of the elements, default 100 */
+  justify-content: space-around; /* space in between of the elements and also around the elements, around the elements default is 50 */
+  justify-content: space-evenly;
+
+  /* cross axis */
+  /* when you apply flex to display property, it makes the align-items to stretch value by default */
+  align-items: stretch; /* default */
+  align-items: flex-start; /* make the elements put on the start again (y-axis -> top) */
+  align-items: flex-end; /* make the elements put on the end (y-axis -> bottom) */
+  align-items: center;
+
+  /* make the elements to the bottom right of the container */
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  /* make the elements to the top left of the container  */
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  align-items: center;
+  align-items: flex-end;
+  align-items: flex-start;
+  align-items: stretch; /* Default */
+
+  flex-wrap: wrap; /* when the screen is compress, elements will go to bottom. */
+  flex-wrap: wrap-reverse;
+  flex-wrap: nowrap; /* default | when screen is compress, element is stretch in x-axis */
+
+  /* put gap between the elements */
+  column-gap: 30px; /* x-axis */
+  row-gap: 30px; /* y-axis */
+
+  /* if both gap have the same value */
+  gap: 30px;
+}
+
+/* willingness of the elements to grow */
+/* flex-grow can be only used in each element */
+.flexItem1 {
+  flex-grow: 0; /* default */
+  flex-grow: 1; /* assigning a value makes the elements taking up all of the unused space */
+}
+
+/* willingness to shrink */
+/* flex-shrink can be only used in each element */
+.flexItem1 {
+  flex-shrink: 1; /* default | allows to shrink */
+  flex-shrink: 0; /* making the value to 0 makes the elements not shrinks */
+}
+
+/* Apply it to only one elements */
+.flexItem2 {
+  align-self: flex-start;
+  align-self: flex-end;
+  align-self: center;
+}

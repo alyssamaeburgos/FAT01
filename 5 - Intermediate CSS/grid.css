@@ -1,0 +1,66 @@
+/* grid */
+/* 2-dimensional | columns and rows */
+/* each square called self */
+
+.gridContainer {
+  display: grid;
+
+  /* Using px */
+  grid-template-columns: 200px 200px 200px 200px; /* how many columns and how much width of the columns */
+  grid-template-rows: 200px 200px 200px 200px; /* how many rows will be alter and how much height of its rows */
+
+  /* using auto */
+  /* automatically gives height and weight value to the elements depending how much content on each elements has*/
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+
+  /* using % */
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 33% 33% 33% 33%;
+  border: 2px solid black;
+  padding: 0px;
+
+  /* using FR - fractional units */
+  grid-template-columns: 1fr 1fr 1fr; /* 1/3 1/3 1/3 = 3/3 = 1 */
+
+  /* in programming, we should observe DRY -> Do not repeat yourself */
+  /* using repeat() function */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Media Queries */
+/* 
+    Mobile Devices: Less than 481px
+    iPads, Tablets: 481px - 768px
+    Small Screens, Laptops: 769px - 1024px
+    Desktops, Large Screens: 1025px - 1200px
+    Extra Large Screens, TV: 1201px and greater
+*/
+
+/* Desktop to TV */
+@media screen and (min-width: 1025px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* iPads, Tablets, small screens, laptops */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* mobile devices */
+@media screen and (max-width: 480px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gridItem {
+    background-color: tomato;
+  }
+}

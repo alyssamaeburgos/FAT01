@@ -1,0 +1,78 @@
+.box1 {
+  /* padding */
+  /* padding refers to the space between the content and the border of the box. */
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  /* text-align: center; */
+}
+
+.box2 {
+  /* padding shorthand */
+  /* if we pass only 1 value, all sides will have the same value */
+  /* if we pass 2 value, first value -> top and bottom | second value -> right and left  */
+  /* if we pass 3 value, first value -> top | second value -> right and left | third value -> bottom */
+  /* if we pass 4 value -> padding: top right bottom left  */
+  /* clockwise */
+  padding: 20px 30px 40px 50px;
+}
+
+.box3 {
+  /* margin */
+  /* margin is the space outside the box. */
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.box4 {
+  /* margin shorthand */
+  /* if we pass only 1 value, all sides will have the same value */
+  /* if we pass 2 value, first value -> top and bottom | second value -> right and left  */
+  /* if we pass 3 value, first value -> top | second value -> right and left | third value -> bottom */
+  /* if we pass 4 value -> padding: top right bottom left  */
+  /* clockwise */
+  margin: 20px 10px;
+}
+
+.mix-borders {
+  /* border */
+  /* border is the line outside the box; and space between the margin and padding */
+  background-color: aquamarine;
+
+  /* to make the paragraph shows in the box */
+  height: 100px;
+  width: 200px;
+
+  /* border */
+  /* if we pass only 1 value, all sides will have the same value */
+  /* if we pass 2 value, first value -> top and bottom | second value -> right and left  */
+  /* if we pass 3 value, first value -> top | second value -> right and left | third value -> bottom */
+  /* if we pass 4 value -> padding: top right bottom left  */
+  /* clockwise */
+  border-style: solid dotted dashed double;
+  border-width: 4px 6px 8px 10px;
+  border-color: tomato yellow blue green;
+
+  /* margin */
+  margin: 20px 10px;
+}
+
+.mix-borders-shorthand {
+  border: solid tomato 10px;
+}
+
+.circle-container {
+  /* make it circle */
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+
+  /* to make it a perfect circle, make the value 50% of the height and width (if the height and width are the same) */
+  border-radius: 50%;
+
+  /* make the word inside the box */
+  text-align: center;
+}

@@ -1,0 +1,57 @@
+/* Element Selector */
+/* This will apply to all particular element. */
+span {
+  background-color: green;
+  color: white;
+}
+
+/* Class Selector */
+.intro-paragraphs {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* ID Selector */
+#main-heading {
+  line-height: 8;
+  text-decoration: underline;
+}
+
+/* Universal Selector */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Grouping Selector */
+h1,
+h2,
+.about-content {
+  /* color: #e5e5e5;
+  background-color: #14213d; */
+  background-color: aqua;
+  color: red;
+}
+
+/* Descendant Selector */
+.article-container p {
+  font-style: italic;
+  color: tomato;
+}
+
+/* .article-container {
+  p {
+    font-size: 10px;
+  }
+} */
+
+/* Pseudo Classes */
+/* change the state of an element */
+/* for example <a> tag */
+a:hover {
+  font-size: 3rem;
+  color: yellow;
+}
+
+a:active {
+  color: tomato;
+}
